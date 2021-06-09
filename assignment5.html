@@ -1,16 +1,46 @@
-<!--Assignment -5:check whether script tags are been called by your browser or not using NoScript tag and display your name the script on HTML Body-->
+<!--Assignment-5:create 3 divisions side by side with division1 in the green background ,division2 in the gray background ,division3 in green color-->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Assignment-5</title>
+	<style>
+	   .leftdiv{
+	   	   color: black;
+	   	   background-color: green;
+	   	   float: left;
+	   }
+	   .middlediv{
+	   	   color: black;
+	   	   background-color: green;
+	   	   float: left;
+	   }
+	   .rightdiv{
+	   	   color: white;
+	   	   background-color: green;
+           float: right;
+	   }
+	   div{
+	   	padding: 1%;
+	   	color: white;
+	   	background-color: light yellow;
+	   	width: 30.8%;
+	   	border: solid black;
+	   }
+	</style>
 </head>
 <body>
-	<script>
-		document.write('Lakshmi Pooja');
-	</script>
-	<noscript>
-		script is not working 
-	</noscript>
+	<div class="leftdiv">
+		<h1>KITS</h1>
+		<p>The purpose of loreThem ipsum is the create a natural looking block of text (semtence ,paragraph ,page ,etc.)that doesn't distract from the layout .A  practice is not without controversy ,laying out pages with meaningless filler text can be </p>
+	</div>
+	<div class="middlediv">
+		<h1>kits</h1>
+		<p>The purpose of loreThem ipsum is the create a natural looking block of text (semtence ,paragraph ,page ,etc.)that doesn't distract from the layout .A  practice is not without controversy ,laying out pages with meaningless filler text can be</p>
+	</div>
+	<div class="rightdiv">
+		<h1>kits</h1>
+		<p>The purpose of loreThem ipsum is the create a natural looking block of text (semtence ,paragraph ,page ,etc.)that doesn't distract from the layout .A  practice is not without controversy ,laying out pages with meaningless filler text can be</p>
+	</div>
 </body>
 </html>
