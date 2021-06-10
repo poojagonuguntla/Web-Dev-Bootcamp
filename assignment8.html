@@ -1,16 +1,31 @@
-<!--Assignment-8:create an unordered list of items (Name, Aadhar Number,Phone Number)on HTML with square Boxes as style-->
+<!--Assignment - 8: Create an input that reads from the data list through the select tag and display the data in the paragraph tag of HTML-->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Assignment-8</title>
+	<title>Dropdown Demo</title>
+	<style>
+		p{
+			color: red;
+		}
+	</style>
 </head>
-<body>
-	<h1>List of items</h1>
-	<ul style="list-style-type:square;">
-		<li>pooja</li>
-		<li>456789879065</li>
-		<li>8976542345</li>
-	</ul>
+<body><label>Choose Your fav city</label>
+	<select id='city'>
+		<option>Hyderabad</option>
+		<option>Chennai</option>
+		<option>New Delhi</option>
+		<option>Agra</option>
+		<option>Rajasthan</option>
+		<option>Vijayawada</option>
+	</select>
+	<button onclick="readData()">Submit</button>
+	<p id="result"></p>
+	<script>
+		function readData() {
+			var c=document.getElementById('city').value;
+			document.getElementById('result').innerHTML=c;
+		}
+	</script>
 </body>
 </html>

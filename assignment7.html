@@ -1,16 +1,44 @@
-<!--Assignment-7:create a button ,when you click on the button some portion of the paragraph should be updated-->
+<!--Assignment - 7: Create an input that reads from radio, checkbox which displays the selected data in separate paragraphs.-->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Assignment-7</title>
+	<style>
+		p{
+			color: red;
+		}
+	</style>
 </head>
 <body>
-	<p> <span id="t1" class="letter">boot camp </span> is going good</p>
-	<button type="button" onclick="changetext()">change text</button>
+	<h3>Your Favourite sport:</h3>
+	<label for="gender">Gender</label>
+		<input type="Radio" id="gender" name="gender" value="female"/>Female
+		<input type="Radio" id="gender" name="gender" value="male">Male
+		<br>
+	<input type="checkbox" id="cricket" name="cricket">cricket
+	<input type="checkbox" id="football" name="football">football
+	<br>
+	<button onclick="readData()">Submimt</button>
+	<p id="result"></p>
 	<script>
-		function changetext() {
-			document.getElementById("t1").innerHTMl="web-dev"
+		function readData() {
+			var cricket=document.getElementById('cricket');
+			var fooorball=document.getElementById('football');
+			var res;
+			var gender=document.getElementById('gender').value;
+			alert(gender)
+			if(cricket.checked == true && football.checked == true){
+				res='cricket, football';
+			}else if(cricket.checked == false && football.checked == true){
+				res='football only';
+			}else if(cricket.checked == true && football.checked == false){
+				res='cricket only';
+			}else{
+				res='None';
+			}
+			document.getElementById('result').innerHTML=res;
+
 		}
 	</script>
 </body>
