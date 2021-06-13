@@ -1,9 +1,30 @@
-<!--Assignment-3:Play your favourite English poem video and create a track using track tag on HTML-->
+<!--Assignment - 3: Create paragraphs in the div tag and demonstrate child css selector, highlight the paragraphs respectively.-->
+<!--Child Selector (>)-->
 <!DOCTYPE html>
 <html>
-     <body>
-     	<video width="450" controls>
-     		<source src="c:\users\pandu\documents\Day4\poem.mp4.mp4" type="video/mp4">
-     	</video>
-     </body>
-</html>			
+<head>
+	<meta charset="utf-8">
+	<title>Child Selector</title>
+	<style>
+		div  > p {
+			background-color: blueviolet;
+
+		}
+	</style>
+</head>
+<body>
+	<h1>Child Selector </h1>
+	<p>this is a paragraph</p>
+	<div><!--p1,p2 p4 are childs-->
+		<p>This is paragraph 1</p>
+		<p>This is paragraph 2</p>
+		<section>
+			<p>This is paragraph 3</p>
+		</section>
+			<p>This is paragraph 4</p>
+	</div>
+	<p>This is paragraph 5</p>
+	<p>This is paragraph 6</p>
+
+</body>
+</html>

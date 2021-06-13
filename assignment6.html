@@ -1,15 +1,33 @@
-<!--Assignment-6:create an image map for prabhas Bahubali and anchor the mahishmati logo to navigate to prabhas twitter handler on HTML-->
+<!--Assignment - 6: Use Multiple CSS Classes to highlight on a single paragraph in the html-->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>CSS Classes </title>
+	<style>
+		.abc {
+			text-align: center;
+		}
+		.def {
+			color: red;
+		}
+	</style>
 </head>
 <body>
-	<a href="https://twitter.com/prabhasraju?lang=en#:~:text=prabhas%20(%40PrabhasRaju) %20%7C%20Twitter" target="_blank"><img src="mahishmati.png" width="'100" height="100" /></a>
-	<img  src="prabhas.png" usemap="#image-map">
-	<map name="image-map">
-		<area target="_blank" alt="bahubali" title="bahubali" href="229,956,842,162" shape="rect">
-	</map>
+		<p class="abc">
+			Web Dev Bootcamp
+		</p>
+		<p id="p1" class="abc def">
+			Today is the  Web Dev Bootcamp</p>
+		<button onclick="toogleName()">Toogle</button>
+		<button onclick="resetName()">Reset</button>
+
+		<script>
+			function toogleName() {
+				document.getElementById('p1').innerHTML='This is conducted for 5 sessions'
+			}
+			function resetName() {
+				document.getElementById('p1').innerHTML='Today is the  Web Dev Bootcamp'
+			}
+		</script>
 </body>
-</html>
