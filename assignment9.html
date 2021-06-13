@@ -1,16 +1,18 @@
-<!--Assignment-9:create an unordered list of items (Name,Aadhar Number,Mobile Number) on HTML with Roman Numbers as style-->
+<!--Assignment - 9: Write your name on Canvas using HTML and Javascript.-->
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Assignment-9</title>
-</head>
-<body>
-	<h1>List of items</h1>
-	<ol type="I">
-		<li>pooja</li>
-		<li>456734561256</li>
-		<li>8907654278</li>
-	</ol>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Name on Canvas</title>
+	</head>
+	<body>
+		<canvas  id="c1" width= "300" height="100" style="border: 3px solid red;"></canvas>
+			<script>
+				var c=document.getElementById('c1');
+					cursor=c.getContext("2d");
+					cursor.font="30px Arial"
+					
+					cursor.strokeText("Lakshmi pooja",10,50);
+			</script>
+	</body>
 </html>

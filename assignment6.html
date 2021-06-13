@@ -1,55 +1,15 @@
-<!--Assignment-6:create an input that reads the name ,aadhar number,address,and displays it in the table format .-->
+<!--Assignment-6:create an image map for prabhas Bahubali and anchor the mahishmati logo to navigate to prabhas twitter handler on HTML-->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Assignment-6</title>
-	<style>
-	    p{
-	    	color: red;
-	    }
-	</style>
+	<title></title>
 </head>
 <body>
-	<form>
-		<fieldset id="abcd">
-			<legend>Details</legend>
-			Name:<input type="text" id="uname" required><br><br>
-			Aadhar number:<input type="number" id="aadhar" required><br><br>
-			Address:<input type="text" id="address"><br><br>
-			<button onclick="readData()">Submit</button>
-		</fieldset>
-		<h1>Result Table</h1>
-		<table border="1">
-			<tr>
-				<th>Name</th>
-				<th>Aadhar Number</th>
-				<th>Address</th>
-			</tr>
-			<tr>
-				<td id="abc"></td>
-				<td id="ghj"></td>
-				<td id="ijk"></td>
-			</tr>
-		    <tr>
-		    	<td id="abc">Not yet read</td>
-		    	<td id="ghj">Not yet read</td>
-		    	<td id="ijk">Not yet read</td>
-		    </tr>
-		</table>
-		<p id="result"></p>
-		<script>
-			function readData(){
-				var uname=document.getElementById('uname').value;
-				var aadhar=document.getElementById('aadhar').value;
-				var address=document.getElementById('address').value;
-				var res=document.getElementById('abcd').value
-				document.getElementById('abc').innerHTML=uname;
-				document.getElementById('ghj').innerHTML=aadhar
-				document.getElementById('ijk').innerHTML=address;
-				document.getElementById('result').innerHTML=res;
-			}
-		</script>
-	</form>
+	<a href="https://twitter.com/prabhasraju?lang=en#:~:text=prabhas%20(%40PrabhasRaju) %20%7C%20Twitter" target="_blank"><img src="mahishmati.png" width="'100" height="100" /></a>
+	<img  src="prabhas.png" usemap="#image-map">
+	<map name="image-map">
+		<area target="_blank" alt="bahubali" title="bahubali" href="229,956,842,162" shape="rect">
+	</map>
 </body>
 </html>
